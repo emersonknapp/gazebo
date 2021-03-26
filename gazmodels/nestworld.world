@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+    <world name="world1">
+        <include>
+            <uri>model://sun</uri>
+        </include>
+        <!--Bedroom1-->
+        <model name="furniture_0">
+            <include>
+                <uri>model://cardboard_box</uri>
+                <pose>2 3 -1 2.0 0.0 3.14</pose>
+                <static>true</static>
+            </include>
+        </model>
+        <model name="furniture_1">
+            <include>
+                <uri>model://bookshelf</uri>
+                <pose>-2 -1 0.5  0.0 0.0 3.14</pose>
+                <static>true</static>
+            </include>
+        </model>
+        <!--Structure models-->
+        <model name="structure_0">
+            <include>
+                <uri>model://cabinet</uri>
+                <static>true</static>
+            </include>
+        </model>
+    </world>
+</sdf>

@@ -1,0 +1,1 @@
+rocker --user --x11 gazebodev:11-binary --oyr-run-arg "--name gazdevbin --rm -w /ws -v $(pwd):/ws"
