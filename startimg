@@ -1,0 +1,1 @@
+rocker --user --x11 gazebodev:11 --oyr-run-arg "--name gazdev --rm -w /ws -v $(pwd):/ws"
