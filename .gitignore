@@ -1,6 +1,7 @@
 
 test/plugins/rest-web/node_modules
 build
+install/
 build_*
 build-*
 Ogre.log
