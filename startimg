@@ -1,0 +1,1 @@
+rocker --user --x11 --nvidia gazdev:11 --oyr-run-arg "--name gazdev11 --cap-add=SYS_PTRACE --rm -w /ws -v $(pwd):/ws"
