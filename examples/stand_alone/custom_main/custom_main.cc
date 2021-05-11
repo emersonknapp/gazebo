@@ -82,7 +82,9 @@ void server_main(int argc, char **argv)
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
     gazebo::msgs::GzString msg;
     msg.set_data("arst");
-    pub->Publish(msg);
+    if (pub) {
+      pub->Publish(msg);
+    }
   }
 
   gazebo::shutdown();
@@ -95,11 +97,7 @@ int main(int argc, char **argv)
   if (fork() == 0) {
     client_main(argc, argv);
   } else {
-    // if (fork() == 0) {
-    //   client_publisher(argc, argv);
-    // } else {
-      server_main(argc, argv);
-    // }
+    server_main(argc, argv);
   }
 
   return 0;
